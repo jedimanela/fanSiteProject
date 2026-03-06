@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 300px;
+    background-image: url("./pictures/Green Bricks.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color:floralwhite;
+    text-shadow: 3px 3px black;
+    font-size: 100px;
+}
+
+.grid-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    grid-template-areas: 
+    "mov   game   fb"
+    "rel   rel    rel"
+    "event event  event";
+}
+
+.movies {
+    grid-area: mov;
+    text-align: center;
+}
+
+.movies img {
+    width: 90%;
+    height: auto;
+}
+
+.games {
+    grid-area: game;
+    text-align: center;
+}
+
+.games img {
+    width: 100%;
+    height: auto;
+}
+
+.events {
+    grid-area: event;
+}
+
+.fb {
+    grid-area: fb;
+    text-align: center;
+}
+
+.fbIframe {
+    border:none;
+    overflow:hidden;
+}
+
+.newReleases {
+    grid-area: rel;
+}
+
+.relContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.newReleases img{
+    width: 100%;
+    height: auto;
+}
+
+.events > div {
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+th, td {
+  border-collapse: separate;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  
+}
+
+
