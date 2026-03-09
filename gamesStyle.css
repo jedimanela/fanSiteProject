@@ -39,9 +39,9 @@ cursor: pointer;
 
     text-align: center;
     grid-template-areas: 
-    "bat    you"
-    "party  you"
-    "voy    you";
+    "bat    batYou"
+    "party  partyYou"
+    "voy    voyYou";
 }
 
 #you {
@@ -60,29 +60,47 @@ figcaption {
     padding-left: 4px;
 }
 
+iframe {
+    width: 560px;
+    height: 315px;
+    margin-top: 50px;
+}
+
 #batman{
     grid-area: bat;
 }
-
 #batman img{
     width: 420px;
     height: auto;
+}
+#batYou {
+    grid-area: batYou;
+    background-color: darkseagreen;
 }
 
 #party{
     grid-area: party;
 }
-
-#voyagers {
-    grid-area: voy;
-}
-
 #party img{
     width: 300px;
     height: auto;
 }
+#partyYou {
+    grid-area: partyYou;
+    background-color: darkseagreen;
+}
 
+#voyagers {
+    grid-area: voy;
+}
 #voyagers img{
     width: 400px;
     height: auto;
 }
+#voyYou {
+    grid-area: voyYou;
+    background-color: darkseagreen;
+}
+
+
+
