@@ -21,16 +21,16 @@ header h1 {
     font-size: 100px;
 }
 
- .legoButton {
-    width: 125px;
-    height: 50px;
-    color:white;
-    text-align: center;
-    background-image: url('./pictures/greenLegoButton.jpg');
-    background-size: cover;
-    border: none;
-    cursor: pointer;
-  }
+.legoButton {
+width: 125px;
+height: 50px;
+color:white;
+text-align: center;
+background-image: url('./pictures/greenLegoButton.jpg');
+background-size: cover;
+border: none;
+cursor: pointer;
+}
 
 .image-grid {
   display: grid; 

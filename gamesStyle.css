@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 300px;
+    background-image: url("./pictures/gamesBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color:floralwhite;
+    text-shadow: 3px 3px black;
+    font-size: 100px;
+}
+
+.legoButton {
+width: 125px;
+height: 50px;
+color:white;
+text-align: center;
+background-image: url('./pictures/greenLegoButton.jpg');
+background-size: cover;
+border: none;
+cursor: pointer;
+}
+
+.newContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    text-align: center;
+    grid-template-areas: 
+    "bat    you"
+    "party  you"
+    "voy    you";
+}
+
+#you {
+    grid-area: you;
+    background-color: darkseagreen;
+}
+
+figure {
+    display: table;
+}
+img, figcaption {
+    display: table-cell;
+    vertical-align: top;
+}
+figcaption {
+    padding-left: 4px;
+}
+
+#batman{
+    grid-area: bat;
+}
+
+#batman img{
+    width: 420px;
+    height: auto;
+}
+
+#party{
+    grid-area: party;
+}
+
+#voyagers {
+    grid-area: voy;
+}
+
+#party img{
+    width: 300px;
+    height: auto;
+}
+
+#voyagers img{
+    width: 400px;
+    height: auto;
+}
